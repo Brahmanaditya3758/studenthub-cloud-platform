@@ -1,4 +1,4 @@
-# phase 1 : Network(VPC, SG , NACL)
+# Phase 1 : Network(VPC, SG , NACL)
 
 ## What I built
 (I will fill this in after I build it)
