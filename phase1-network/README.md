@@ -1,3 +1,15 @@
+# Phase 1: Network (VPC, SG, NACL)
+
+I built a VPC (`10.0.0.0/16`) with one public and one private subnet, an internet gateway, a public route table, a security group and a network ACL.
+
+The public subnet is public because its route table sends `0.0.0.0/0` to the internet gateway. The private subnet has no such route.
+
+## What I learned
+- Security groups are stateful and attach to servers. NACLs are stateless and attach to subnets, so they need return-traffic rules.
+- A subnet CIDR must fit inside the VPC CIDR.
+
+
+
 ## Screenshots
 
 **VPC and subnets**
