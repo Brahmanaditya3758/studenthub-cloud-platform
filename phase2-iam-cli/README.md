@@ -1,10 +1,14 @@
-# Phase 2 : iam , cli
+# Phase 2: Access (IAM, CLI)
 
 ## What I built
-(I will fill this in after I build it)
+- IAM user 'studenthub-use', used for all daily work instead of the root account
+- AWS CLI configured for region 'ap-south-1'
+- Checked the setup with 'aws sts get-caller-identity'
 
-## Screenshots
-(I will add them here)
+## Screenshot
+![CLI identity](../docs/screenshots/11-cli-identity.png)
 
 ## What I learned
-(I will fill this in)
+- IAM is global, but the CLI needs a region to know where to find resources.
+- Access keys are long-term passwords for programs. They stay outside the repo.
+- A user's name doesn't give permissions. The attached policy does.
