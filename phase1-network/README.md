@@ -1,12 +1,20 @@
 # Phase 1: Network (VPC, SG, NACL)
+![Architecture](../docs/screenshots/archi.png)
 
-I built a VPC (`10.0.0.0/16`) with one public and one private subnet, an internet gateway, a public route table, a security group and a network ACL.
+Overview
 
-The public subnet is public because its route table sends `0.0.0.0/0` to the internet gateway. The private subnet has no such route.
+Created the foundational AWS networking infrastructure for the StudentHub project using Amazon Virtual Private Cloud (VPC). This phase establishes network isolation and prepares the environment for future EC2 deployments and application hosting.
 
-## What I learned
-- Security groups are stateful and attach to servers. NACLs are stateless and attach to subnets, so they need return-traffic rules.
-- A subnet CIDR must fit inside the VPC CIDR.
+Components Configured
+VPC (studenthub-vpc): Created an isolated virtual network for project resources.
+Public Subnet (public-1): Configured to support resources requiring direct internet connectivity.
+Private Subnet (private-1): Reserved for resources that should not be directly accessible from the internet.
+Internet Gateway (studenthub-igw): Created and attached to the VPC to enable internet connectivity for public subnet resources.
+Public Route Table (public-rt): Configured a default route (0.0.0.0/0) pointing to the Internet Gateway.
+Subnet Association: Associated the public subnet with the public route table while keeping the private subnet separate.
+Architecture and Networking Concepts
+
+This phase demonstrates the fundamentals of AWS networking, including VPC isolation, public and private subnet design, Internet Gateway configuration, route management , and subnet associations
 
 
 
