@@ -1,14 +1,14 @@
 # Phase 3: Ec2
 
 What I built
-![Phase 3 architecture](screenshots/phase3-archi.png)
+![Phase 3 architecture](../docs/screenshots/phase3-archi.png)
 
 In this phase of the StudentHub Cloud Platform project, I worked on Amazon EC2 (Elastic Compute Cloud) to understand how compute infrastructure is configured in AWS.
 
 Explored EC2 instance configuration and launch settings.
 
 ### EC2 instance running
-![EC2 instance running](screenshots/11-ec2-instance-running.png)
+![EC2 instance running](../docs/screenshots/11-ec2-instance-running.png)
 
 
 Worked with the networking foundation established in Phase 1.
@@ -16,18 +16,18 @@ Worked with the networking foundation established in Phase 1.
 Reviewed instance networking and security group configurations.
 
 ### EC2 instance details (subnet, security group, IAM role)
-![EC2 details](screenshots/12-ec2-instance-details.png)
+![EC2 details](../docs/screenshots/12-ec2-instance-details.png)
 
 Learned how EC2 provides virtual servers for hosting and running applications.
 
 ### Nginx default page
-![Nginx default page](screenshots/13-nginx-default-page.png)
+![Nginx default page](../docs/screenshots/13-nginx-default-page.png)
 
 ### Creating the page on the server
-![Terminal commands](screenshots/14-nginx-studenthub-page.png)
+![Terminal commands](../docs/screenshots/14-nginx-studenthub-page.png)
 
 ### StudentHub page in the browser
-![StudentHub page](screenshots/15-nginx-studenthub-pageout.png)
+![StudentHub page](../docs/screenshots/15-nginx-studenthub-pageout.png)
 
 
 
