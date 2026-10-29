@@ -1,20 +1,37 @@
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <!-- <meta charset="UTF-8"> -->
-  <!-- //<meta name="viewport" content="width=device-width, initial-scale=1.0"> -->
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>StudentHub Cloud Platform</title>
   <link rel="stylesheet" href="style.css">
+  <script src="script.js" defer></script>
 </head>
 <body>
   <main class="container">
     <p class="tag">AWS CLOUD PROJECT</p>
+
     <h1>Welcome to StudentHub</h1>
+
     <p>
       A cloud platform built while learning AWS,
       Linux and DevOps step by step.
     </p>
+
     <p class="status">Phase 4: S3 + CloudFront</p>
+
+    <button id="details-button" type="button">
+      Show Project Details
+    </button>
+
+    <section id="project-details" hidden>
+      <h2>Project Details</h2>
+      <p>Network: Amazon VPC</p>
+      <p>Compute: Amazon EC2</p>
+      <p>Static Website: Amazon S3 + CloudFront</p>
+      <p>Next Step: Docker, Amazon ECR and Amazon ECS</p>
+    </section>
   </main>
 </body>
 </html>

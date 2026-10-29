@@ -14,6 +14,7 @@ body {
 }
 
 .container {
+  width: calc(100% - 32px);
   max-width: 650px;
   margin: 24px;
   padding: 48px;
@@ -35,4 +36,56 @@ h1 {
 .status {
   margin-top: 24px;
   font-weight: bold;
+}
+
+#details-button {
+  margin-top: 12px;
+  padding: 12px 20px;
+  border: none;
+  border-radius: 8px;
+  background: #0369a1;
+  color: white;
+  font-size: 1rem;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+#details-button:hover {
+  background: #075985;
+}
+
+#details-button:focus-visible {
+  outline: 3px solid #7dd3fc;
+  outline-offset: 3px;
+}
+
+#project-details {
+  margin-top: 24px;
+  padding: 20px;
+  border-left: 4px solid #0369a1;
+  border-radius: 8px;
+  background: #f1f5f9;
+}
+
+#project-details h2 {
+  margin-top: 0;
+  font-size: 1.4rem;
+}
+
+#project-details p {
+  line-height: 1.6;
+}
+
+#project-details[hidden] {
+  display: none;
+}
+
+@media (max-width: 600px) {
+  .container {
+    padding: 28px 22px;
+  }
+
+  h1 {
+    font-size: 2rem;
+  }
 }
