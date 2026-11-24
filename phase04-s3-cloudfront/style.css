@@ -1,0 +1,195 @@
+
+/* ==============================
+   1. Global Styles
+================================ */
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  min-height: 100vh;
+  display: grid;
+  place-items: center;
+  font-family: Arial, sans-serif;
+  background: #f1f5f9;
+  color: #172554;
+}
+
+/* ==============================
+   2. Main Container
+================================ */
+
+.container {
+  width: calc(100% - 32px);
+  max-width: 750px;
+  margin: 24px;
+  padding: 48px;
+  background: white;
+  border-radius: 16px;
+  box-shadow: 0 8px 30px rgba(0, 0, 0, 0.08);
+}
+
+/* ==============================
+   3. Header Section
+================================ */
+
+.tag {
+  color: #0369a1;
+  font-weight: bold;
+  letter-spacing: 2px;
+}
+
+h1 {
+  font-size: 2.5rem;
+  color: #172554;
+}
+
+.status {
+  margin-top: 24px;
+  font-weight: bold;
+}
+
+/* ==============================
+   4. Project Details Button
+================================ */
+
+#details-button {
+  margin-top: 12px;
+  padding: 12px 20px;
+  border: none;
+  border-radius: 8px;
+  background: #0369a1;
+  color: white;
+  font-size: 1rem;
+  font-weight: bold;
+  cursor: pointer;
+  transition: background 0.2s ease;
+}
+
+#details-button:hover {
+  background: #075985;
+}
+
+#details-button:focus-visible {
+  outline: 3px solid #7dd3fc;
+  outline-offset: 3px;
+}
+
+/* ==============================
+   5. Project Details Section
+================================ */
+
+#project-details {
+  margin-top: 24px;
+  padding: 20px;
+  border-left: 4px solid #0369a1;
+  border-radius: 8px;
+  background: #f1f5f9;
+}
+
+#project-details h2 {
+  margin-top: 0;
+  font-size: 1.4rem;
+}
+
+#project-details p {
+  line-height: 1.6;
+}
+
+#project-details[hidden] {
+  display: none;
+}
+
+/* ==============================
+   6. Student Directory
+================================ */
+
+#students-section {
+  margin-top: 28px;
+  padding-top: 4px;
+}
+
+#students-section h2 {
+  margin-bottom: 18px;
+  color: #172554;
+  font-size: 1.5rem;
+}
+
+/* View Students Button */
+
+#load-students-button {
+  padding: 12px 22px;
+  border: none;
+  border-radius: 8px;
+  background: #0369a1;
+  color: white;
+  font-size: 1rem;
+  font-weight: bold;
+  cursor: pointer;
+  transition: background 0.2s ease;
+}
+
+#load-students-button:hover {
+  background: #075985;
+}
+
+#load-students-button:focus-visible {
+  outline: 3px solid #7dd3fc;
+  outline-offset: 3px;
+}
+
+/* API Status Message */
+
+#students-status {
+  margin-top: 18px;
+  font-size: 0.95rem;
+  font-weight: 600;
+  color: #166534;
+}
+
+/* Student Cards */
+
+#students-list {
+  list-style: none;
+  padding: 0;
+  margin-top: 18px;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: 14px;
+}
+
+#students-list li {
+  padding: 18px;
+  border: 1px solid #dce5ef;
+  border-radius: 10px;
+  background: #f1f5f9;
+  color: #172554;
+  font-size: 0.95rem;
+  line-height: 1.7;
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+#students-list li:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.08);
+}
+
+/* ==============================
+   7. Responsive Design
+================================ */
+
+@media (max-width: 600px) {
+  .container {
+    padding: 28px 22px;
+  }
+
+  h1 {
+    font-size: 2rem;
+  }
+
+  #students-list {
+    grid-template-columns: 1fr;
+  }
+}
